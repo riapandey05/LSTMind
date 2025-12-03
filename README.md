@@ -1,123 +1,129 @@
-LSTMind – Next Word Predictor Using LSTM
 
-Predict the next word like Shakespeare.
+# 🚀 **LSTMind — Next Word Predictor Powered by LSTM**
 
-🧠 Overview
+## 🧠 **Overview**
 
-LSTMind is an AI-powered next-word prediction app built using LSTM (Long Short-Term Memory) neural networks.
-The model is trained on Shakespeare’s Hamlet dataset to generate text in a similar style.
-The project includes:
+**LSTMind** is a deep-learning based **Next Word Prediction** system trained on **Shakespeare’s *Hamlet***.
+Using an **LSTM neural network**, it learns Elizabethan writing patterns and predicts the most likely next word for any input text.
+The project includes an elegant **Streamlit interface** for real-time text generation.
 
-A clean Streamlit-based UI
+---
 
-A trained LSTM deep learning model
+# ✨ **Features**
 
-Real-time next-word prediction
+* 🔤 **Next Word Prediction** using LSTM
+* 📜 **Shakespeare-style text generation**
+* 🎭 Trained on *Hamlet*
+* ⚡ **Streamlit Deployment** with interactive UI
+* 🔧 Custom NLP preprocessing & tokenization
+* 📈 Easily extendable for more datasets
 
-Custom text continuation in Shakespearean style
+---
 
-🚀 Features
+# 📂 **Project Structure**
 
-Next-Word Prediction: Suggests the most probable next word for a given input.
-
-Text Generation: Continue text in Shakespeare’s tone and vocabulary.
-
-Streamlit Deployment: Lightweight, fast, and interactive web UI.
-
-Preprocessing Pipeline: Tokenization, sequencing, vocabulary creation, and padding.
-
-Trained on Hamlet: Captures Elizabethan writing patterns.
-
-🗂️ Project Structure
+```
 LSTMind/
 │── data/
 │   └── hamlet.txt
 │── model/
-│   └── lstm_nextword_model.h5
-│── app.py
-│── preprocess.py
+│   ├── lstm_nextword_model.h5
+│   ├── tokenizer.pkl
+│   └── metadata.json
 │── train.py
-│── README.md
+│── preprocess.py
+│── app.py
 │── requirements.txt
+│── README.md
+```
 
-🔧 Tech Stack
+---
 
-Python
+# 🛠️ **Tech Stack**
 
-TensorFlow / Keras
+* **Python 3.x**
+* **TensorFlow / Keras**
+* **NumPy, Pandas**
+* **Tokenizer (Keras)**
+* **Streamlit**
 
-NumPy, Pandas
+---
 
-NLTK / Tokenizer
+# 🧵 **Model Architecture**
 
-Streamlit
+* **Embedding Layer**
+* **2-Layer LSTM Network**
+* **Dense Output Softmax Layer**
+* Optimizer: **Adam**
+* Loss: **Categorical Crossentropy**
 
-Matplotlib (optional for training visualization)
+---
 
-🧪 Model Architecture
+# ▶️ **How to Run the Project**
 
-Embedding Layer
+### **1. Clone the Repository**
 
-2-layer LSTM network
-
-Dense Output Layer (Softmax)
-
-Trained using:
-
-Categorical crossentropy
-
-Adam optimizer
-
-Custom sequence generation pipeline
-
-▶️ Run Locally
-1. Clone the Repository
+```bash
 git clone https://github.com/your-username/LSTMind.git
 cd LSTMind
+```
 
-2. Install Dependencies
+### **2. Install Dependencies**
+
+```bash
 pip install -r requirements.txt
+```
 
-3. Run Streamlit App
+### **3. Run Streamlit App**
+
+```bash
 streamlit run app.py
+```
 
-🌐 Live Demo
+---
 
-If you deployed it, add the link here:
+# 🌐 **Live Demo (Optional)**
 
-🔗 https://your-streamlit-app-url
+Add your Streamlit link here:
 
-📘 How It Works
+```
+🔗 lstmind.streamlit.app/
+```
 
-Input a few words into the text box
+---
 
-LSTMind predicts the next word based on learned Shakespearean patterns
+# 📘 **How It Works**
 
-Auto-generate text sequence by clicking “Generate Text”
+1. User enters a few words
+2. Model processes input sequence
+3. LSTM predicts the most probable next word
+4. Optionally generates long Shakespeare-style text
 
-📊 Training Details
+---
 
-Dataset: Hamlet by William Shakespeare
+# 📊 **Training Summary**
 
-Vocabulary Size: X words
+* Dataset: **Hamlet — William Shakespeare**
+* Vocabulary Size: *add your number here*
+* Training Sequences: *add number*
+* Epochs: *add number*
+  (*Optional to fill in later*)
 
-Total Sequences: Y sequences
+---
 
-Training Epochs: Z epochs
-(Fill these numbers if you want)
+# 🛣️ **Future Enhancements**
 
-🛠️ Future Improvements
+* Add **Top-k Sampling**
+* Add **Temperature Control**
+* Add **Multiple Shakespeare Plays**
+* Deploy backend API using **FastAPI**
+* Add **multi-word prediction**
 
-Add top-k and temperature-based sampling
+---
 
-Include more Shakespeare plays
+# 👩‍💻 **Author**
 
-Add multi-word prediction
-
-Host backend with FastAPI for performance
-
-✨ Author
-
-Ria Pandey
-AI & ML Enthusiast | B.Tech CSE
+**Ria Pandey**
+AI/ML Enthusiast | B.Tech CSE
 📍 VIT Bhopal
+
